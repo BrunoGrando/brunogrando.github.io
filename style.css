@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root{
+    --Paleblue: hsl(225, 100%, 94%);
+    --Brightblue: hsl(245, 75%, 52%);
+    --Verypaleblue: hsl(225, 100%, 98%);
+    --Desaturatedblue: hsl(224, 23%, 55%);
+    --Darkblue: hsl(223, 47%, 23%)
+}
+*{
+    border: 0;
+    outline: 0;
+    padding: 0;
+    margin: 0;
+    vertical-align: baseline;
+    box-sizing: border-box;
+    font-weight: inherit;
+    font-family: inherit;
+    font-style: inherit;
+    font-size: 100%;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background: url(images/pattern-background-desktop.svg) no-repeat ;
+    background-size: 100%;
+    background-color:var(--Paleblue);
+    font-family: 'Red Hat Display', sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container{
+    display: flex;
+}
+
+.card{
+    width: 400px;
+    padding: 0;
+    border-radius: 20px;
+}
+.card img{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.card-title{
+    font-weight: 900;
+    font-size: 1.5rem;
+    margin-top: 30px;
+    color: var(--Darkblue);
+}
+.card-text{
+    color: var(--Desaturatedblue);
+}
+.annualplan{
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    background-color: var(--Verypaleblue);
+    padding: 10px;
+    margin: 10px 30px 20px 30px;
+    border-radius: 15px;
+}
+.annualplan p {
+    margin: 0;
+    padding-left: 20px;
+    text-align: left;
+    color: var(--Darkblue);
+    font-weight: 700;
+    font-size: .9em;
+}
+.annualplan .cor-p{
+    color: var(--Desaturatedblue);
+    font-weight: 500;
+}
+.annualplan a{
+    color: var(--Brightblue);
+    font-weight: 700;
+    font-size: .8em;
+    margin-left: 25px;
+}
+.plan{
+    display: flex;   
+}
+.colums{
+    display: flex;
+    flex-direction: column;
+}
+/* buttons bottom */
+.buttons{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+.buttons .btn{
+    margin: 10px;
+    border-radius: 12px;
+    box-shadow: 4px 5px 18px -8px var(--Darkblue);
+    background-color:var(--Brightblue);
+    padding:10px;
+    font-weight: 700;
+}
+.buttons .btn1{
+    margin-top: 10px;
+    color: var(--Desaturatedblue);
+    text-decoration: none;
+    font-weight: 700;
+}
+/* footer */
+footer p {
+    margin-top: 5;
+    font-size: .6em;
+}
